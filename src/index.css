@@ -47,58 +47,5 @@ border-radius: 10px;
   border-radius: 10px;
   background-color: #fddaec;  
 }
-.overview{
-  margin-bottom: 20px;
-}
 
-.weather-temperature img{
-  margin-right: 6px;
-  height: 64px;
-  width: 64px;
-}
 
-.weather-temperature strong{
-  color: rgb(87, 2, 73);
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 1;
-
-}
-.weather-temperature .units{
-  position: relative;
-  font-size: 16px;
-  top: -34px
-}
-a{
-  text-decoration: none;
-}
-
-.weather-temperature .active{
-  color: rgb(24, 22, 22) ;
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-text-decoration: none;
-}
-
-.weather-forecst{
-  margin-top: 20px;
-  text-align: center;
-  color: #000
-}
-.weather-forecst-date{
-  text-align: 16px;
-  font-weight: bold;
-opacity: 0.5;
-color: #380121;
-}
-
-.weather-forecst-temperatures{
-  font-size: 13px;
-  font-weight: 300;
-}
-.weather-forecst-temperatures-min{
-  opacity: 0.6;
-  color: #380121;
-}  
