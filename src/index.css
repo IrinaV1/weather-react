@@ -26,11 +26,9 @@ li{
 li::first-letter{
   text-transform: capitalize;
 }
-#date{
-  font-size: 24px;
-  font-weight: 500;
+
  
-}
+
 #description{
   font-size: 20px;
   font-weight: 300;
