@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
-import WeatherInfo from './WeatherInfo';
+import WeatherInfo from "./WeatherInfo";
 
 
 
@@ -22,7 +22,7 @@ date: new Date(response.data.dt * 1000),
 description: response.data.weather[0].description,
 iconUrl: "https://openweathermap.org/img/wn/10d@2x.png",
 wind: response.data.wind.speed,
-city: response.data.name
+city: response.data.name,
 });
 } 
 
@@ -34,21 +34,18 @@ function search() {
     
 }
 
-
-
 function handleSubmit(event) {
-    event.prevent.Default();
+    event.preventDefault();
     search();
 }
-
 function handleCityChange(event) {
 setCity(event.target.value)
 }
 
 if (weatherData.ready) {
-
     return (
-        <>
+        <div>
+        
         <form onSubmit={handleSubmit} id="search-form" className="mb-4">
                     <div className="row">
                         <div className="col-9">
@@ -59,13 +56,15 @@ if (weatherData.ready) {
     </div>
     </div>
     </form>
-      <WeatherInfo data={weatherData} /> 
-    </>
+
+    <WeatherInfo data={weatherData} />
+    </div>
       );
 
 } else {
-search();
- return <p>"Loading..."</p>;
+search()
+
+ return <div>"Loading..."</div>;
 }
 };
 
