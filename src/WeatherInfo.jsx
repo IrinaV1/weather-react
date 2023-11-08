@@ -9,7 +9,7 @@ function WeatherInfo (props) {
     <div className="weather">
     
     <h1 id="city">{props.data.city}</h1>
-<ul>
+<ul className='p-0'>
     <li> 
     <FormatedDate date={props.data.date} /></li>
     <li id="description">{props.data.description}</li>
